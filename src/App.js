@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ExpenseItem from './ExpenseItem/ExpenseItem';
 import Card from './Card/Card';
+import NewExpense from './NewExpense/NewExpense';
 
 function App() {
   const items = [
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <Card className="App">
+      <NewExpense/>
       <ExpenseItem items={items[0]}/>
       <ExpenseItem items={items[1]}/>
       <ExpenseItem items={items[2]}/>
