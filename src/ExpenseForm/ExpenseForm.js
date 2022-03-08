@@ -50,6 +50,10 @@ const ExpenseForm = (props) => {
     // });
   };
 
+  const onCancelClickHandler = ev => {
+      props.onCancelClicked();
+  }
+
   return (
     <form onSubmit={onSubmitHandler}>
       <div>
@@ -82,6 +86,7 @@ const ExpenseForm = (props) => {
         ></input>
       </div>
       <button type="submit">Add Expense</button>
+      <button type="button" onClick={onCancelClickHandler} >Cancel</button>
     </form>
   );
 };
